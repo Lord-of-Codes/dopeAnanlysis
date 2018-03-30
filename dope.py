@@ -50,7 +50,7 @@ while J < len(MARKETS):
 			break
 		SUMBTC = SUMBTC + ORDERS['Sell'][K]['Total']	#Calculating total sum
 		if SUMBTC > 0.5:
-			if ORDERS['Sell'][K]['Price'] < FIRSTSELL*1.4:		#checking if the price of coin rises by 40% on investment of 0.5btc
+			if ORDERS['Sell'][K]['Price'] < FIRSTSELL*1.8:		#checking if the price of coin rises by 40% on investment of 0.5btc
 				del MARKETS[J]
 				FLAG = 1
 			break
