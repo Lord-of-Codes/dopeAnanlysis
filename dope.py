@@ -50,9 +50,6 @@ while J < len(MARKETS):
 		if SUMBTC > 1:
 			if ORDERS['Sell'][K]['Price'] < FIRSTSELL*1.8:
 				MARKETS.pop(J)
-			else:
-				J = J + 1
-			break
+				break
+		K=K+1
 print (len(MARKETS))
-
-
